@@ -1,0 +1,12 @@
+<div>
+    <h1>My Quote</h1>
+    <ul>
+        <div *ngFor='let quote of quotes;let i = index'>
+
+            <li >{{quote.name}} done by pamela on {{quote.completeDate|date|uppercase}}</li>
+            <button (click)='toggleDetails(i)'>Toggle </button>
+            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+            </app-quote-detail>
+        </div>
+    </ul>
+    <p *ngIf='quotes.length'>this is the end of quote</p>
