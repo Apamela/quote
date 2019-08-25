@@ -11,11 +11,11 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'thankfull quote', 'Gratitude can transform common days into thanksgivings, turn routine jobs into joy, and change ordinary opportunities into blessings.',new Date(2019,3,4)),
     new Quote(3, 'succeess quote' , 'Success is not final; failure is not fatal: It is the courage to continue that counts',new Date(2019,6,8)),
   ];
-  addNewGoal(goal){
-    let goalLength = this.quotes.length;
-    goal.id = goalLength+1;
-    goal.completeDate = new Date(goal.completeDate)
-    this.quotes.push(goal)
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+  quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
   }
   deleteQuote(isComplete, index){
     if (isComplete) {
