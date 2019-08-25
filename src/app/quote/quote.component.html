@@ -7,16 +7,17 @@
                 <div>
                     <h6 id={{i}} appStrikethrough>{{quote.name}} done by pamela on {{quote.completeDate|date|uppercase}}
                     </h6>
-                    <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle </button>
+                    <button (click)='toggleDetails(i)' class="btn btn-outline-info">Toggle Q</button>
                 </div>
-                <div *ngIf='quote.showDescription'>
+                <div *ngIf='quote.showDescription'><br> 
                     <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'>
                     </app-quote-detail>
-                </div>
+                    
+               
             </div>
         </div>
         <div class="col-md-6">
-                <app-quote-form></app-quote-form>
+                <app-quote-form (addQuote)="addNewQuote($event)" ></app-quote-form>
         </div>        
     </div>
 
