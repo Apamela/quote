@@ -1,8 +1,6 @@
 <p>{{quote.description}}</p>
-Auothor:{{quote.quote_author}},
-submitter:{{quote-quote_submitter}},
-available date:{{quote.completeDate|dateCount}}
-<p>This Quote was submitted {{quote.completeDate|dateCount}} days</p>
+
+<p>This Quote was submitted {{quote.completeDate|dateCount}} days ago</p>
 <button (click)='likeQ()' class="btn btn-outline-dark">like</button>
 <p>{{like}}</p>
 <button (click)='dislikeQ()' class="btn btn-outline-dark">dislike</button>
