@@ -1,4 +1,8 @@
 <p>{{quote.description}}</p>
 <!-- <button (click)= 'quoteComplete(true)'>Complete</button> -->
 <p>This quote will be complete in {{quote.completeDate|dateCount}} days</p>
-<button (click)= 'quoteDelete(true)' class="btn btn-outline-dark">Delete Quote</button>
+<button (click)='likeQ()' class="btn btn-outline-dark">like</button>
+<p>{{like}}</p>
+<button (click)='dislikeQ()' class="btn btn-outline-dark">dislike</button>
+<p>{{dislike}}</p>
+<button (click)='quoteDelete(true)' class="btn btn-outline-dark">Delete Quote</button>
