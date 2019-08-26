@@ -47,4 +47,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * githun-username:Apamela
 
 ## License
-copyright(c)2019pamy
+copyright(c)2019
