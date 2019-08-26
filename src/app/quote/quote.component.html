@@ -10,9 +10,9 @@
                     <button (click)='toggleDetails(i)' class="btn btn-outline-info">Toggle Q</button>
                 </div>
                 <div *ngIf='quote.showDescription'><br> 
-                    <!-- <p appHighlight *ngIf="highestUpvote()===quote.likes && quote.likes>0">{{quote.quote}}</p>
+                    <!-- <p appHighlight *ngIf="highestLike()===quote.likes && quote.Likes>0">{{quote.quote}}</p>
                     
-                    <p  *ngIf="highestUpvote()!==quote.likes || quote.likes===0">{{quote.quote}}</p> -->
+                    <p  *ngIf="highestLike()!==quote.Likes || quote.Likes===0">{{quote.quote}}</p> -->
                     <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'>
                     </app-quote-detail>
                     
