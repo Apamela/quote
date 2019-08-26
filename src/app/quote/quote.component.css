@@ -8,3 +8,9 @@ background-color: skyblue;
 h1{
     text-align: center;
 }
+button{
+    border-radius: 20px;
+    padding: 5px;
+    width:120px;
+    
+}
