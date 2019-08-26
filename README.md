@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-##DESCRIPTION
+## DESCRIPTION
 
 This is a Quote applictation created that allows users to add Quotes view them and either like or dislike other submited Quotes. 
 ## Development server
